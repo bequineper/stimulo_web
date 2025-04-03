@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Coding */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Inter", serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.15rem solid #D9D9D9;
+    height: 5rem;
+    width: 100vw;
+}
+header .logo{
+    width: 7rem;
+}
+header .logo img{
+    width: 100%;
+}
+header nav ul{
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 320;
+}
+
+header .user {
+    width: 13rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.user button{
+    display: flex;
+    align-items: center;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.user button a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    font-family: "Inter",serif;
+    font-size: smaller;
+    transition: color 0.2s; 
+}
+
+
+.user button:hover{
+    color: #F5F5F5;
+    transform: scale(1.05);
+}
+
+
+.loginButton{
+    border: 0.133rem solid #767676;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    background-color: #E3E3E3;
+    
+}
+.loginButton a{
+    color: #1E1E1E;
+    display: flex;
+    align-items: center;
+}
+
+.registerButton{
+    border: 0.05rem solid #2C2C2C;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #2C2C2C;
+}
+.registerButton a{
+    color: #F5F5F5;
+}
+
+.loginButton, .registerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.0rem; 
+    height: 2.3rem;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s; 
+}
+
+.loginButton a, .registerButton a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; 
+    text-decoration: none;
+    font-family: "Inter", serif;
+    font-size: 0.2rem;
+    font-weight: 300;
+    transition: color 0.2s; 
+    margin: 0; 
+    padding: 0;
+}
+
+.loginButton:hover, .registerButton:hover {
+    
+    
+    transform: scale(1.05);
+}
+/* HEADER */
+/* ------------------------------------------------ */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70rem;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    height: 65rem;
+    align-items: center;
+    padding: 10rem 20vw;
+    gap: 2rem;
+
+}
+
+#loginForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4rem;
+    background: #F5F5F5;
+    width: 30rem;
+    height: 40rem;
+}
+
+#loginForm form .signIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+#loginForm form .signIn h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+}
+#loginForm form .signIn p a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+#loginForm form .email {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 70%;
+}
+
+#loginForm form .email input{
+    border: none;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 0.2rem;
+}
+#loginForm form .email input:focus{
+    outline: none;
+}
+
+#loginForm form .password_rememberMe {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+}
+
+#loginForm form .password {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+}
+
+#loginForm form .password input{
+    border: none;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 0.2rem;
+}
+#loginForm form .password input:focus{
+    outline: none;
+}
+#loginForm form .password {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#loginForm form .rememberMe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#loginForm form .rememberMe input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: #AFAFAF;
+    
+}
+#loginForm form .rememberMe input[type="checkbox"]:checked{
+    color: #1E1E1E;
+}
+
+
+
+#loginForm form .signIn_button button{
+    padding: 1rem 2rem;
+    border-radius: 1.3rem;
+    font-size: 2rem;
+    background-color: #1E1E1E;
+    color: white;
+    transition: 0.5s;
+}
+
+#loginForm form .signIn_button button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    scale: 1.05;
+}
+
+
+
+
+#loginForm .forgotten a{
+    color: #1E1E1E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 100vw;
+    border-top: 0.15rem solid #D9D9D9;
+}
+footer #mainFooter{
+    height: 80%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+footer #mainFooter .footerList{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+footer #mainFooter .footerList li{
+    display: flex;
+
+}
+
+
+footer #mainFooter .footerList .column1, .column2, .column3, .column4, .column5{
+    display: flex;
+    flex-direction: column;
+}
+footer #mainFooter .footerList ul, .column1_div, .column5_div{
+    list-style: none;
+    width: 12rem;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+footer #mainFooter .footerList ul li a{
+    text-decoration: none;
+    color: #464646;
+    font-weight: 350;
+}
+
+.column1_div{
+    gap: 3rem;
+}
+
+
+
+.column1_1{
+    display: flex;
+  
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.column1_1 .socialMedia{
+    display: flex;
+    justify-content: left;
+    gap: 0.8rem;
+}
+.column1_1 .socialMedia i{
+    scale: 1.4;
+    color: #21272A;
+}
+
+.column1 .column1_1 img{
+    width: 8rem;
+}
+
+.column1 .column1_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.column1_2 p{
+    color: #7E7E7E;
+    font-weight: 300;
+}
+.column1_2 b{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.column1_2 .language{
+    border: 0.1rem solid #B4B4B4;
+    width: 8rem;
+    border-radius: 0.4rem;
+    display: flex;
+    padding: 0.3rem 0.4rem;
+    gap: 1.1rem;
+}
+.language .english a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.column5_div{
+    gap: 6rem;
+}
+
+.column5_div .column5_2 a{
+    text-decoration: none;
+    font-weight: 850;
+    color: #1E1E1E;
+}
+
+.column5_2{
+    transition: 0.5s;
+
+}
+.column5_2:hover{
+    scale: 1.5;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
